@@ -333,7 +333,9 @@ h6 {
 }
 .edrea_modalbox .close a {
 	text-decoration:none;
-	color:#fff
+	color:#fff;
+	width: 50px;
+	height: 50px;display: block;
 }
 .edrea_modalbox .close .svg {
 	width:50px;
@@ -357,7 +359,7 @@ h6 {
 }
 .edrea_modalbox .image {
 	position:relative;
-	max-height:450px;
+	max-height:600px;
 	margin-bottom:50px;
 	overflow:hidden
 }
@@ -374,7 +376,8 @@ h6 {
 	right:0;
 	background-repeat:no-repeat;
 	background-position:center;
-	background-size:cover
+	background-size:cover;
+	background-size: contain;
 }
 .edrea_modalbox h3 {
 	font-size:23px;
@@ -755,6 +758,12 @@ h6 {
 .video_inner{position: fixed;width: 1244px;margin: 0 auto;text-align: right;top: 50%;left: 50%;-webkit-transform: translate(-50%,-50%);   -moz-transform: translate(-50%,-50%);-ms-transform: translate(-50%,-50%);transform: translate(-50%,-50%);z-index: 999;display: none;}
 .video_inner span{display: inline-block;font-size: 50px;color: #fff;cursor: pointer;}
 .video_inner iframe{width: 1244px;height: 700px;}
+@media(max-width: 1280px){
+  .video_inner{width: 90%;}
+  .video_inner iframe{width: 100%;height: 54vw;}
+}
+
+
 .aboutcontent{height: 600px;overflow: auto;padding-right: 20px;}
 .edrea_title {
 	/*max-width:670px*/text-align: justify;
@@ -765,13 +774,14 @@ h6 {
 .edrea_title .sub_text span {
 	display:inline-block;
 	padding:8px 18px;
-	font-size:14px;
+	font-size:28px;
 	line-height:21px;
 	background-color:#fff;
-	color:#dd4242
+	color:#dd4242;
+	text-transform: capitalize;
 }
 .edrea_title.bg_white .sub_text span {
-	background-color:#f9f9fc
+	background-color:#ffffff
 }
 .edrea_title .title {
 	margin:0;
@@ -1045,10 +1055,10 @@ h6 {
 .edrea_portfolio_slider .item .overlay {
 	content:'';
 	position:absolute;
-	height:100%;
+	height:60px;
 	left:0;
 	right:0;
-	bottom:100%;
+	bottom:-60px;
 	transition:all .4s ease;
 	z-index:1
 }
@@ -1062,7 +1072,7 @@ h6 {
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-end;
-	padding:30px;
+	padding:15px 20px;
 	transition:all .8s ease
 }
 .edrea_portfolio_slider .item .title_holder h3 {
@@ -1086,7 +1096,10 @@ h6 {
 	font-weight:400;
 	line-height:21px;
 	letter-spacing:0;
-	color:#a9afc3
+	color:#a9afc3;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
 }
 .edrea_portfolio_slider .item .title_holder h3>span {
 	padding-right:40px;
@@ -1259,10 +1272,10 @@ h6 {
 .edrea_news_slider .item .overlay {
 	content:'';
 	position:absolute;
-	height:100%;
+	height:100px;
 	left:0;
 	right:0;
-	bottom:100%;
+	bottom:-100px;
 	transition:all .4s ease;
 	z-index:1
 }
@@ -1276,7 +1289,7 @@ h6 {
 	display:flex;
 	flex-direction:column;
 	justify-content:flex-end;
-	padding:50px;
+	padding:20px;
 	transition:all .8s ease
 }
 .edrea_news_slider .item .title_holder h3 {
@@ -1286,9 +1299,11 @@ h6 {
 	font-size:24px;
 	font-style:normal;
 	font-weight:700;
-	line-height:38px;
+	line-height:28px;
 	letter-spacing:0;
-	color:#fff
+	color:#fff;
+	white-space: nowrap;overflow: hidden;
+	text-overflow: ellipsis;
 }
 .edrea_news_slider .item .title_holder p {
 	margin:0;
@@ -1355,7 +1370,7 @@ h6 {
 	font-weight:500;
 	line-height:30px;
 	letter-spacing:0;
-	margin-bottom:9px
+	margin-bottom:9px;display: inline-block;width: 180px;padding-right: 20px; text-align: right;
 }
 .edrea_contact .contact_left p {
 	margin:0;
@@ -1364,7 +1379,7 @@ h6 {
 	font-style:normal;
 	font-weight:400;
 	line-height:30px;
-	letter-spacing:0
+	letter-spacing:0;display: inline-block;
 }
 .edrea_contact .contact_left p a {
 	color:#7e7e7e;
@@ -2124,6 +2139,7 @@ body.intro .loader_line:after {
 	body {
 	font-size:16px
 }
+.edrea_portfolio_slider .item .overlay{height: 50px;}
 .edrea_modalbox.opened .box_inner {
 	width:500px;
 	width:88vw
@@ -2209,6 +2225,16 @@ body.intro .loader_line:after {
 .edrea_footer ul li {
 	margin-left:10px
 }
+.edrea_prevnext a{font-size: 16px;}
+.aboutcontent{padding-right: 10px;}
+.edrea_about .content{padding: 50px 20px;}
+.edrea_title .sub_text span{padding: 8px 5px;}
+.edrea_news_slider .item .title_holder{padding: 10px 20px;}
+.edrea_news_slider .item .overlay{height: 50px;}
+.edrea_news_slider .item .title_holder h3{font-size: 16px;font-weight: 400;}
+.edrea_news_slider .item .title_holder p{display: none;}
+.edrea_contact .contact_left h3 {width: 150px;padding-right: 0px;padding-left: 10px; text-align: left;}
+
 }@media(max-width:480px) {
 	.edrea_service_list .service_item {
 	padding:30px 50px 30px 80px
