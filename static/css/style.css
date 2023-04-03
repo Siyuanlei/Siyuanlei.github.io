@@ -619,7 +619,7 @@ h6 {
 .edrea_hero .overlay_image {
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position:75% 100%;
+	background-position:100% 60%;
 }
 .edrea_hero .content {
 	position:relative;
