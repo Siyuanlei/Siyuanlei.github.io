@@ -540,7 +540,7 @@ h6 {
 .edrea_topbar .logo {
 	margin-right:20px;font-size: 20px;
 }
-.edrea_topbar .logo a{color: #333;text-decoration: none;}
+.edrea_topbar .logo a{color: #111111;text-decoration: none;}
 .edrea_topbar .logo img {
 	max-width:120px;
 	max-height:70px;border-radius: 50%;margin-right: 10px;
@@ -560,7 +560,7 @@ h6 {
 }
 .edrea_topbar ul li a {
 	text-decoration:none;
-	color:#7e7e7e;
+	color:#111111;
 	font-size:16px;
 	font-weight:500;
 	display:block;
@@ -614,12 +614,12 @@ h6 {
 	left:0;
 	right:0;
 	bottom:0;
-	z-index:2
+	z-index:2;background-image: linear-gradient(to right, rgba(255,255,255,0.8),rgba(255,255,255,0.2))
 }
 .edrea_hero .overlay_image {
 	background-repeat:no-repeat;
 	background-size:cover;
-	background-position:75% 100%
+	background-position:75% 100%;
 }
 .edrea_hero .content {
 	position:relative;
@@ -648,7 +648,7 @@ h6 {
 .edrea_hero .description {
 	margin:0;
 	padding:0;
-	margin-bottom:43px
+	margin-bottom:43px;color: #333;
 }
 .edrea_video_button {
 	max-width:260px;
@@ -732,7 +732,7 @@ h6 {
 }
 .edrea_about {
 	position:relative;
-	background-color:#f9f9fc
+	background-color:#fff
 }
 .edrea_about .overlay {
 	position:absolute;
@@ -2227,6 +2227,7 @@ body.intro .loader_line:after {
 .edrea_footer ul li {
 	margin-left:10px
 }
+.edrea_hero .overlay_color{background-image: linear-gradient(to right, rgba(255,255,255,0.6),rgba(255,255,255,0.5));}
 .edrea_prevnext a{font-size: 16px;}
 .aboutcontent{padding-right: 10px;}
 .edrea_about .content{padding: 50px 20px;}
