@@ -1348,8 +1348,8 @@ h6 {
 	align-items:center
 }
 .edrea_contact .contact_left {
-	width:50%;
-	padding-right:80px
+	width:100%;
+	padding-right:0px
 }
 .edrea_contact .contact_left ul {
 	margin:0;
@@ -1359,7 +1359,7 @@ h6 {
 .edrea_contact .contact_left li {
 	margin:0;
 	padding:0;
-	width:100%;
+	width:50%;float: left;
 	margin-bottom:33px
 }
 .edrea_contact .contact_left h3 {
@@ -1371,7 +1371,7 @@ h6 {
 	font-weight:500;
 	line-height:30px;
 	letter-spacing:0;
-	margin-bottom:9px;display: inline-block;width: 180px;padding-right: 20px; text-align: right;
+	margin-bottom:9px;display: inline-block;width: 180px;padding-right: 20px; text-align: left;
 }
 .edrea_contact .contact_left p {
 	margin:0;
@@ -2236,6 +2236,7 @@ body.intro .loader_line:after {
 .edrea_news_slider .item .overlay{height: 50px;}
 .edrea_news_slider .item .title_holder h3{font-size: 16px;font-weight: 400;}
 .edrea_news_slider .item .title_holder p{display: none;}
+.edrea_contact .contact_left li{width: 100%;}
 .edrea_contact .contact_left h3 {width: 150px;padding-right: 0px;padding-left: 10px; text-align: left;}
 
 }@media(max-width:480px) {
