@@ -2245,6 +2245,8 @@ body.intro .loader_line:after {
 .edrea_contact .contact_left li{width: 100%;}
 .edrea_contact .contact_left h3 {width: 150px;padding-right: 0px;padding-left: 10px; text-align: left;}
 
+.edrea_title .title, .edrea_hero .title{font-size: 32px;}
+
 }@media(max-width:480px) {
 
 .edrea_hero .overlay{right: -60%;}
